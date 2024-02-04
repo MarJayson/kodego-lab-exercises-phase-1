@@ -3,35 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My second activity</title>
   </head>
   <style>
-    table,th,td {
-        border: 1px solid black;
-  
+  h2 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+  }
+    table,
+    td {
+      border: 1px solid black;
+    }
+    table,
+    th {
+      border: 2px solid black;
+      background-color: antiquewhite;
+    }
+    li a {
+      color: white;
+      text-decoration: none;
+      margin: 50px;
+    }
+    header ul li {
+      list-style: none;
+    }
+    nav ul {
+      display: flex;
+    }
+    header {
+      padding: 10px;
+      background-color: black;
+    }
+    a:hover {
+      background-color: red;
+      color: black;
+      border-radius: 2px;
+    }
+    div,
+    h3,
+    p video {
+      background-color: antiquewhite;
     }
   </style>
-  <body>
-    <header>
-      <nav>
+  <header>
+    <nav>
+      <h1>
         <ul>
-          <li><a href="">Activities</a></li>
-          <li><a href="">Media</a></li>
-          <li><a href="">Contact Us</a></li>
+          <li><a href="#Activities">Activities</a></li>
+          <li><a href="#Media">Media</a></li>
+          <li><a href="#Contact-Us">Contact-Us</a></li>
         </ul>
-      </nav>
-    </header>
-    <h1><ul><li>Activities</li></ul></h1>
+      </h1>
+    </nav>
+  </header>
+  <body>
+    <h2>
+      <ul>
+        <li><section class id="Activities">Activities</li>
+      </ul>
+    </h2>
     <table>
-        <tr>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>
-            <th>Sunday</th>
-            </tr>
+      <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      <tr>
         <td>6:00am</td>
         <td>6:00pm</td>
         <td>7:00am</td>
@@ -39,22 +81,93 @@
         <td>7:00pm</td>
         <td>8:00am</td>
         <td>9:00am</td>
-        <tr>
-            <td>Jogging</td>
-            <td>Cooking</td>
-            <td>Playing basketball</td>
-            <td>Church meeting</td>
-            <td>Family bonding</td>
-            <td>Go for a ride</td>
-            <td>Go to churh</td>
-        </tr></table>
-        
-
-
-
-
-
-       
-   
-  
+      </tr>
+      <tr>
+        <td>Jogging</td>
+        <td>Cooking</td>
+        <td>Playing basketball</td>
+        <td>Church meeting</td>
+        <td>Family bonding</td>
+        <td>Go for a ride</td>
+        <td>Go to churh</td>
+      </tr>
+    </table>
+    <h2>
+      <ul>
+        <li>
+          <section id="Media">Media</li>
+      </ul>
+    </h2>
+    <div>
+      <h3>
+        <p>
+          <video
+            src="macoy.mp4.mp4"
+            height="300px"
+            width="500px"
+            controls
+            loop
+          ></video>
+          I enjoy spending time with my cat, "Macoy".
+        </p>
+      </h3>
+    </div>
+    <div>
+      <h3>
+        <p>
+          <video
+            src="awta2024.mp4.mp4"
+            height="300px"
+            width="500px"
+            controls
+            loop
+          ></video
+          >Happy moments with my brothers and sisters in Christ, going home
+          after the annual worship thanksgiving assembly in Laguna.
+        </p>
+      </h3>
+    </div>
+    <div>
+      <h3>
+        <p>
+          <video
+            src="morningrides.mp4.mp4"
+            height="300px"
+            width="500px"
+            controls
+            loop
+          ></video
+          >Our first long ride.
+        </p>
+      </h3>
+    </div>
+    <footer>
+     <h2><ul><li>
+      <section class id="Contact-Us">Contact-Us
+     </li></ul></h2>
+     <form>
+<div>
+  <input type="text" placeholder="Full Name">
+</div>
+<div>
+  <input type="checkbox" id="General Inquiry" value="General Inquiry" name="option">
+  <label for="General Inquiry">General Inquiry</label>
+</div>
+<div>
+<input type="checkbox" id="Products and Services" value="Products and Services" name="option">
+<label for="Products and Services">Products and Services</label>
+</div>
+<div>
+  <input type="checkbox" id="Careers" value="Careers" name="option">
+  <label for="Careers">Careers</label>
+</div>
+<div>
+  <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+</div>
+<div>
+  <input type="submit" value="Submit">
+</div>
+     </form>
+  </footer>
+  </body>
 </html>
